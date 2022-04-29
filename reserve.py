@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 
 try:
     username = input("Введите имя: ")
-    phone_number = int(input("Введите номер телефона: "))
+    phone_number = int(input("Введите номер телефона без '+': "))
     postmail = input("Введите почту: ")
     start_reserve = input("Дату и время бронирования кабинета YYYY-MM-DD HH:MM: ")
     end_reserve = input("Дату и время конца бронирования кабинета YYYY-MM-DD HH:MM: ")
