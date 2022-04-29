@@ -91,11 +91,7 @@ try:
 
         if cursor.fetchone() is None:
             add_data()
-            send_sms(
-                parlor=room,
-                begin=start_reserve,
-                phone=phone_number
-            )
+
             def send_mail(message):
                 sender = 'ruslan00lee@gmail.com'
                 password = 'aliftest123'
@@ -122,6 +118,12 @@ try:
 
             if __name__ == '__main__':
                 main()
+
+            send_sms(
+                parlor=room,
+                begin=start_reserve,
+                phone=phone_number
+            )
         else:
             with connection.cursor() as cursor:
                 cursor.execute(
