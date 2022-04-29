@@ -1,11 +1,13 @@
-# aliftest
+# Aliftask
 ## Инструкция по применению
  - Создать БД
  - Указать данные БД в файле config.py
  - Запустить
  - Указать данные 
 
-# В файле twiliotest.py храниться функция для отправки СМС на телефон
+ В файле `reserve.py` храниться БД и логика отправки сообщения
+
+# В файле `twiliotest.py` храниться функция для отправки СМС на телефон
 ```python
 from twilio.rest import  Client
 from config import account_sid, auth_token, phone_number
