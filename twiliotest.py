@@ -12,6 +12,8 @@ auth_token = auth_token
 
 client = Client(account_sid, auth_token)
 
+new_key = client.new_keys.create(friendly_name='alif')
+
 def send_sms(parlor, begin, phone):
     message = client.messages.create(
         body= f'Вы забронировали {parlor} кабинет на {begin}',

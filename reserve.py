@@ -1,6 +1,5 @@
 import psycopg2
 
-import twiliotest
 from config import host, user, password, db_name
 import smtplib
 from email.mime.text import MIMEText
@@ -98,8 +97,8 @@ try:
                 phone=phone_number
             )
             def send_mail(message):
-                sender = 'rus9lee@gmail.com'
-                password = 'sawasawarus2000'
+                sender = 'ruslan00lee@gmail.com'
+                password = 'aliftest123'
 
                 server = smtplib.SMTP('smtp.gmail.com', 587)
                 server.starttls()
